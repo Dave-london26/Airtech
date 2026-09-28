@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sign Up | AeroTech</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body class="auth-page">
+
+    <div class="auth-container glass">
+
+        <a
+            href="../index.html"
+            class="brand"
+        >
+
+            <span class="logo">
+                A
+            </span>
+
+            AeroTech
+
+        </a>
+
+
+        <h1>
+            Create Account
+        </h1>
+
+        <p>
+            Start your digital journey with AeroTech.
+        </p>
+
+
+        <form id="signupForm">
+
+            <label>
+                Full Name
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+                Email
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+                Phone Number
+
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+234..."
+                >
+
+            </label>
+
+
+            <label>
+                Password
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Create a password"
+                    minlength="6"
+                    required
+                >
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Create Account
+            </button>
+
+        </form>
+
+
+        <p class="muted">
+
+            Already have an account?
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </p>
+
+
+        <p
+            id="formMessage"
+            class="message"
+        ></p>
+
+    </div>
+
+
+    <script src="../js/auth.js"></script>
+
+</body>
+
+</html>
