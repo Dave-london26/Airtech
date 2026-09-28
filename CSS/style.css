@@ -1,4 +1,4 @@
-ok* {
+I'mok* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -878,4 +878,297 @@ footer {
 
     color:
         #5de7ff;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+
+    padding:
+        70px 0;
+}
+
+
+.dashboard-header {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        30px;
+}
+
+
+.dashboard-header h1 {
+
+    font-size:
+        clamp(2rem, 5vw, 4rem);
+
+    margin-top:
+        10px;
+}
+
+
+.dashboard-header h1 span {
+
+    color:
+        #5de7ff;
+}
+
+
+.level {
+
+    padding:
+        13px 20px;
+
+    border-radius:
+        15px;
+
+    color:
+        #5de7ff;
+
+    font-weight:
+        800;
+}
+
+
+.dashboard-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        18px;
+}
+
+
+.dashboard-card {
+
+    padding:
+        25px;
+
+    border-radius:
+        20px;
+}
+
+
+.dashboard-card h3 {
+
+    margin:
+        12px 0;
+
+    font-size:
+        1.3rem;
+}
+
+
+.dashboard-card > p:last-child {
+
+    color:
+        #9fb0c0;
+
+    line-height:
+        1.6;
+}
+
+
+.progress {
+
+    height:
+        9px;
+
+    margin:
+        20px 0 8px;
+
+    border-radius:
+        100px;
+
+    background:
+        #142536;
+
+    overflow:
+        hidden;
+}
+
+
+.progress-bar {
+
+    height:
+        100%;
+
+    background:
+        #5de7ff;
+
+    border-radius:
+        100px;
+}
+
+
+/* =========================
+   CHAT
+========================= */
+
+.chat-container {
+
+    max-width:
+        750px;
+
+    margin:
+        25px auto 0;
+
+    padding:
+        25px;
+
+    border-radius:
+        22px;
+}
+
+
+.chat-container h2 {
+
+    margin-bottom:
+        20px;
+}
+
+
+.messages {
+
+    min-height:
+        200px;
+
+    max-height:
+        400px;
+
+    overflow-y:
+        auto;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+
+    margin-bottom:
+        20px;
+}
+
+
+.chat-message {
+
+    max-width:
+        75%;
+
+    padding:
+        11px 14px;
+
+    border-radius:
+        14px;
+
+    line-height:
+        1.5;
+}
+
+
+.chat-message.bot {
+
+    background:
+        #12304a;
+}
+
+
+.chat-message.user {
+
+    align-self:
+        flex-end;
+
+    background:
+        #155267;
+}
+
+
+.chat-input {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+}
+
+
+.chat-input input {
+
+    flex:
+        1;
+
+    padding:
+        13px;
+
+    border-radius:
+        12px;
+
+    border:
+        1px solid #31485b;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    color:
+        white;
+
+    outline:
+        none;
+}
+
+
+.hidden {
+
+    display:
+        none;
+}
+
+
+@media (max-width: 800px) {
+
+    .dashboard-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .dashboard-header {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            20px;
+    }
+
+
+    .chat-input {
+
+        flex-direction:
+            column;
+    }
+
 }
