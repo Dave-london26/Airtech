@@ -1,0 +1,121 @@
+const services = [
+
+    {
+        name: "Graphic Design",
+        description:
+            "Professional logos, branding, flyers, posters, social media designs and more."
+    },
+
+    {
+        name: "Web Development",
+        description:
+            "Modern responsive websites for businesses, organizations and personal brands."
+    },
+
+    {
+        name: "Application Creation",
+        description:
+            "Custom web and digital applications designed around your business needs."
+    },
+
+    {
+        name: "UI/UX Design",
+        description:
+            "Beautiful and user-friendly interfaces, prototypes and digital experiences."
+    },
+
+    {
+        name: "Digital Consulting",
+        description:
+            "Technology planning and digital strategies to help your business grow."
+    },
+
+    {
+        name: "AI Solutions",
+        description:
+            "AI-powered assistants, automation and intelligent customer support systems."
+    }
+
+];
+
+
+const serviceGrid =
+    document.getElementById("serviceGrid");
+
+const serviceSearch =
+    document.getElementById("serviceSearch");
+
+
+function displayServices(searchTerm = "") {
+
+    const results =
+        services.filter(service =>
+
+            service.name
+                .toLowerCase()
+                .includes(searchTerm.toLowerCase())
+
+            ||
+
+            service.description
+                .toLowerCase()
+                .includes(searchTerm.toLowerCase())
+
+        );
+
+
+    if (results.length === 0) {
+
+        serviceGrid.innerHTML = `
+            <p>
+                No services found.
+            </p>
+        `;
+
+        return;
+    }
+
+
+    serviceGrid.innerHTML =
+        results.map(service => `
+
+            <article class="service-card glass">
+
+                <p class="eyebrow">
+                    AEROTECH SERVICE
+                </p>
+
+                <h3>
+                    ${service.name}
+                </h3>
+
+                <p>
+                    ${service.description}
+                </p>
+
+                <a
+                    href="pages/signup.html"
+                    class="btn small"
+                >
+                    Request Service
+                </a>
+
+            </article>
+
+        `).join("");
+}
+
+
+displayServices();
+
+
+serviceSearch.addEventListener(
+    "input",
+    function(event) {
+
+        displayServices(
+            event.target.value
+        );
+
+    }
+);
