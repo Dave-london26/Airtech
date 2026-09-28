@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Dashboard | AeroTech</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar glass">
+
+    <a
+        href="../index.html"
+        class="brand"
+    >
+
+        <span class="logo">
+            A
+        </span>
+
+        AeroTech
+
+    </a>
+
+
+    <a
+        href="../index.html"
+        class="btn small"
+    >
+        Home
+    </a>
+
+</header>
+
+
+<main class="dashboard">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <p class="eyebrow">
+                CUSTOMER PORTAL
+            </p>
+
+            <h1>
+                Welcome,
+                <span id="userName">
+                    Customer
+                </span>
+            </h1>
+
+        </div>
+
+
+        <div class="level glass">
+
+            ★
+
+            <span id="stars">
+                1
+            </span>
+
+            Star
+
+        </div>
+
+    </div>
+
+
+    <!-- DASHBOARD CARDS -->
+
+    <div class="dashboard-grid">
+
+
+        <!-- PROJECT -->
+
+        <div class="glass dashboard-card">
+
+            <p class="eyebrow">
+                CURRENT PROJECT
+            </p>
+
+            <h3>
+                Website Development
+            </h3>
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    style="width: 55%;"
+                ></div>
+
+            </div>
+
+            <p>
+                55% complete
+            </p>
+
+        </div>
+
+
+        <!-- ORDERS -->
+
+        <div class="glass dashboard-card">
+
+            <p class="eyebrow">
+                ORDERS
+            </p>
+
+            <h3>
+                2 Active Orders
+            </h3>
+
+            <p>
+                Your current projects
+                will appear here.
+            </p>
+
+        </div>
+
+
+        <!-- MESSAGES -->
+
+        <div class="glass dashboard-card">
+
+            <p class="eyebrow">
+                SUPPORT
+            </p>
+
+            <h3>
+                Customer Chat
+            </h3>
+
+            <p>
+                Chat with AeroTech.
+            </p>
+
+            <button
+                class="btn small"
+                id="openChat"
+            >
+                Open Chat
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHAT -->
+
+    <div
+        id="chat"
+        class="chat-container glass hidden"
+    >
+
+        <h2>
+            AeroTech Support
+        </h2>
+
+
+        <div
+            id="messages"
+            class="messages"
+        >
+
+            <div class="chat-message bot">
+
+                Hello! 👋
+
+                I'm the AeroTech assistant.
+
+                How can I help you today?
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Type your message..."
+            >
+
+            <button
+                class="btn small"
+                id="sendBtn"
+            >
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
